@@ -12,9 +12,10 @@ p = 29
 a = [14,6,11]
 
 for i in a:
-    for j in range(1,20):
+    for j in range(1,p):
         if pow(j,2,p)== i:
-            print(i) #tìm quadratic residue
-            print(j) #tìm a
+            print(i) #tìm quadratic residue, a=6
+            print(j) #tìm j, j=8
+
 
 
