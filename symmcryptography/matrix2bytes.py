@@ -4,7 +4,11 @@ def bytes2matrix(text):
 
 def matrix2bytes(matrix):
     """ Converts a 4x4 matrix into a 16-byte array.  """
-    ????
+    for i in range(4):
+        for j in range(4):
+            matrix[i][j] = matrix[i][j] % 256
+    return bytes(sum(matrix, []))
+
 
 matrix = [
     [99, 114, 121, 112],
